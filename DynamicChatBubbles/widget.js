@@ -967,11 +967,12 @@ function parse(text, emotes) {
   const filteredEmotes = emotes.filter(emote => {
     const { name, type } = emote
 
-    if (!['twitch', 'ffz', 'bttv', 'sticker'].includes(type)) return false
+    if (!['twitch', 'ffz', 'bttv', 'sticker', '7tv'].includes(type)) return false
 
     if (
       (type === 'ffz' && FieldData.ffzGlobal) ||
-      (type === 'bttv' && FieldData.bttvGlobal)
+      (type === 'bttv' && FieldData.bttvGlobal) ||
+      (type === '7tv' && FieldData.7tvGlobal)
     )
       return true
 
