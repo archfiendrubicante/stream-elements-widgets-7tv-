@@ -972,7 +972,7 @@ function parse(text, emotes) {
     if (
       (type === 'ffz' && FieldData.ffzGlobal) ||
       (type === 'bttv' && FieldData.bttvGlobal) ||
-      (type === '7tv' && FieldData.7tvGlobal)
+      (type === '7tv')
     )
       return true
 
